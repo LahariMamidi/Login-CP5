@@ -1,10 +1,13 @@
 import './index.css'
 
-const Message = props => {
-  const {isLoggedIn} = props
-  const message = isLoggedIn ? 'Welcome User' : 'Please Login'
+const Login = props => {
+  const {login} = props
 
-  return <h1 className="message">{message}</h1>
+  return (
+    <button type="button" className="login-button" onClick={login}>
+      Login
+    </button>
+  )
 }
 
-export default Message
+export default Login
